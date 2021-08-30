@@ -5,8 +5,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Using `Routes`
 
-Routes [LocalStorage](LocalStorage) Show Custom Local Storage Hook Implementation
+Routes [LocalStorage](LocalStorage) LocalStorage Erişimi Ve
+Dinamik Şekilde Özel Kancalarla Yönetimi Örneği
 
+
+Routes [HookFlow](Hook Flow React) Diyagramı
+
+Routes [LiftingState](Lifting State) React`e yeni başlayanların ortak problemi stateyi nerede tutacaklarıdır.
+Cevap ise temelde iki bileşen arasında paylaşılan en yakın ortak ebeveyndir.(Render Tetikleneceğini Unutmayın !)
 
 
 ## Available Scripts
