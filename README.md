@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Using `Routes`
 
-Routes [LocalStorage] Show Custom Local Storage Hook Implementation
+Routes [LocalStorage](LocalStorage) Show Custom Local Storage Hook Implementation
 
 
 
