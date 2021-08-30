@@ -9,9 +9,9 @@ Routes [LocalStorage](LocalStorage) LocalStorage Erişimi Ve
 Dinamik Şekilde Özel Kancalarla Yönetimi Örneği
 
 
-Routes [HookFlow](Hook Flow React) Diyagramı
+Routes [HookFlow](Hook-Flow-React) Diyagramı
 
-Routes [LiftingState](Lifting State) React`e yeni başlayanların ortak problemi stateyi nerede tutacaklarıdır.
+Routes [LiftingState](Lifting-State) React`e yeni başlayanların ortak problemi stateyi nerede tutacaklarıdır.
 Cevap ise temelde iki bileşen arasında paylaşılan en yakın ortak ebeveyndir.(Render Tetikleneceğini Unutmayın !)
 
 
