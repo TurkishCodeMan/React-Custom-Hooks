@@ -29,8 +29,6 @@ const useLocalStorage = (
 
     useEffect(() => {
         const prevKey = prevKeyRef.current;
-        console.log(prevKey);
-        console.log(key)
         if (prevKey !== key) {
             localStorage.removeItem(prevKey);
         }
@@ -50,15 +48,17 @@ const useLocalStorage = (
 const Counter = ({ defaultValue = 0 }) => {
 
     const [state, setState] = useLocalStorage('count', defaultValue);
-    console.log(state)
+
     return (
         <div className="w-full bg-gray-100 min-h-screen">
             <div className="bg-white p-10">
                 <form>
-                    <label htmlFor="counter" >
+                    <label htmlFor="count" >
                         <input
-                            id="counter"
+                            id="count"
+                            name="counter"
                             value={state}
+                            aria-label="counter"
                             onChange={e => setState(e.target.value)}
                             placeholder="Count"
                             className="rounded-md border px-2 py-1 border-gray-700" />

@@ -8,6 +8,9 @@ import {
 import Counter from "./apps/Counter";
 import HookFlow from "./apps/HookFlow";
 import LiftingState from './apps/LiftingState';
+import Tictactoe from './apps/Tictactoe';
+import { ContextProvider } from './apps/utils/ContextProvider';
+import Tilt from './apps/Tilt';
 
 function App() {
   return (
@@ -26,6 +29,12 @@ function App() {
               <li className="py-3 rounded-md bg-blue-100 px-6">
                 <Link to="/lift-state">Lift State</Link>
               </li>
+              <li className="py-3 rounded-md bg-blue-100 px-6">
+                <Link to="/tictactoe">Tictactoe</Link>
+              </li>
+              <li className="py-3 rounded-md bg-blue-100 px-6">
+                <Link to="/tilt">Tilt</Link>
+              </li>
             </ul>
           </nav>
 
@@ -43,6 +52,14 @@ function App() {
           </Route>
           <Route path="/lift-state">
             <LiftingState />
+          </Route>
+          <Route path="/tictactoe">
+            <ContextProvider>
+              <Tictactoe />
+            </ContextProvider>
+          </Route>
+          <Route path="/tilt">
+            <Tilt>VanillaTilt</Tilt>
           </Route>
         </Switch>
       </Router>
